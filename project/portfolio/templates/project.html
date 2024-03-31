@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Project Details</title>
+  {% load static %}
+  <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+</head>
+
+<body>
+  <div class="container">
+    <section id="project details">
+      <h1>Book Recommendation System</h1>
+      <p>Description: To provide Book Recommendation to users.</p>
+      <p>Year: 2022</p>
+    </section>
+    <section id="project details">
+      <h1> The Electric Motor Speed Prediction </h1>
+      <p>Description: The Electric Motor Speed Prediction is based on different attributes to influence the operation of machine.     .</p>
+      <p>Year: 2023</p>
+    </section>
+  </div>
+
+  <footer>
+    <nav>
+      <ul>
+        <li><a href="{% url 'home' %}">Home</a></li>
+        <li><a href="{% url 'about' %}">About</a></li>
+        <li><a href="{% url 'portfolio' %}">Portfolio</a></li>
+        <li><a href="{% url 'project' %}">Project</a></li>
+      </ul>
+    </nav>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About</title>
+  {% load static %}
+  <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+</head>
+<body>
+  <div class="container">
+    <section id="personal Information">
+      <h1>About my self:</h1>
+      <p> Hi Helloooo! My self is Rushmitha kommana, I am from Andhra pradesh. currently i am doing my masters in new jersey institute of technology in computer science. </p>
+      <p> In my spare time, I listen music and I played games.I love to cook. as well as I am delicious cooker. yeah that's it.........................</p>
+    </section>
+  </div>
+
+  <footer>
+    <nav>
+      <ul>
+        <li><a href="{% url 'home' %}">Home</a></li>
+        <li><a href="{% url 'about' %}">About</a></li>
+        <li><a href="{% url 'portfolio' %}">Portfolio</a></li>
+        <li><a href="{% url 'project' %}">Project</a></li>
+      </ul>
+    </nav>
+  </footer>
+</body>
+</html>
