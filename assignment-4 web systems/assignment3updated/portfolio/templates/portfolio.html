@@ -1,0 +1,30 @@
+<!-- 
+Name: Rushmitha Kommana
+UCID: rk958
+Date of submission: 19-04-2024
+-->
+
+{% extends "base.html" %} {% block content %}
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 offset-md-2">
+      <h3>Portfolio</h3>
+      {% if projects %}
+        {% for project in projects %}
+        <hr>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">{{ project.title }}</h5>
+            <p class="card-text">{{ project.description }}</p>
+            <p class="card-text"><small class="text-muted">{{ project.year }}</small></p>
+          </div>
+        </div>
+        {% endfor %}
+      {% else %}
+      <p>No projects found.</p>
+      {% endif %}
+    </div>
+  </div>
+</div>
+<div style="margin-bottom:90px"></div>
+{% endblock %}

@@ -1,0 +1,34 @@
+<!-- 
+Name: Rushmitha Kommana
+UCID: rk958
+Date of submission: 19-04-2024
+-->
+
+{% extends 'base.html' %}
+
+{% block title %}Home - My Portfolio{% endblock %}
+
+{% block content %}
+{% load static %}
+<div class="jumbotron">
+  <h1 class="display-4">Welcome to my Portfolio!</h1>
+  <p class="lead">This is a simple Portfolio showcasing my personal information.</p>
+</div>
+
+<div class="row">
+  <div class="col-md-6">
+    <img src="{% static 'rush_img.jpg' %}" alt="Your Image" class="img-fluid" style="max-width: 100%;">
+  </div>
+  <div class="col-md-6">
+    <h2>About Myself:</h2>
+    <p>My name is Rushmitha Kommana. I am from Andhra Pradesh. Currently, I am pursuing my Master's degree in Computer Science at the New Jersey Institute of Technology.</p>
+    
+    <h2>Contact Information:</h2>
+    <ul class="list-group">
+      <li class="list-group-item"><strong>Phone:</strong> 0000000000000</li>
+      <li class="list-group-item"><strong>Email:</strong> rk958@njit.edu</li>
+      <li class="list-group-item"><strong>Github:</strong> <a href="https://github.com/example" target="_blank">Github Link</a></li>
+    </ul>
+  </div>
+</div>
+{% endblock %}
