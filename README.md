@@ -1,1 +1,1 @@
-this is Rushmitha kommana  # IS601-106
+Web-Based CV Project | HTML, CSS, JavaScript
